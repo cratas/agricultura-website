@@ -13,4 +13,7 @@
 .myButton:active,
 .myButton:focus {
   box-shadow: none !important;
+  background-color: var(--color-green);
 }
+
+
