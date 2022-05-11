@@ -1,0 +1,10 @@
+.navbarContainer {
+    padding-top: 1.3rem!important;
+}
+
+.links {
+    margin-right: 2rem;
+    font-weight: 700;
+    color: var(--color-black)!important;
+}
+
