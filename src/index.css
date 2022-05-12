@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Epilogue', sans-serif;
 
-  --font-family: 'Lato', sans-serif;
+  --font-family: 'Epilogue', sans-serif;
   --color-white: #fff;
+  --color-white-light: rgba(255, 255, 255, 0.836);
+
   --color-green: #25A762;
   --color-black: #111111;
   --color-green-hover: #269258;
+  --color-navbar: rgba(255, 255, 255, 0.7);
+
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

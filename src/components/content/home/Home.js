@@ -1,13 +1,49 @@
 import React from "react";
+import MyButton from "../../UI/MyButton";
+import classes from "./Home.module.css";
+import titleImage from "./../../../assets/title-image.png";
+import WhyUs from "./WhyUs";
+import { Container } from "react-bootstrap";
+import Footer from "../footer/Footer";
 
 const Home = () => {
   return (
     <>
-      <div>Home</div>;
+      <Container>
+        <div className={classes.homeSection}>
+          <div className={classes.textSide}>
+            <h1>
+              Profesionální
+              <br />
+              zemědělské
+              <br />
+              služby
+            </h1>
+            <p>
+              Jro zemědělce, ať žijí již malé či velké, soukrémě hospodařící
+              nebo zemědělské společnosti hospodařící nebo zemědělské
+              společnosti
+            </p>
+            <MyButton text="Více o nás" />
+          </div>
+          <div className={classes.imageSide}>
+            <div className={classes.imageWrapper}>
+              <img
+                src={titleImage}
+                className={classes.profilePicture}
+                alt="Me"
+                sizes="500px"
+              ></img>
+            </div>
+          </div>
+        </div>
+      </Container>
+      {/* Why us section */}
+      <WhyUs />
+      {/* Footer with contact info */}
+      <Footer />
     </>
   );
 };
-
-
 
 export default Home;

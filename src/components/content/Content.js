@@ -8,14 +8,12 @@ import { Routes, Route } from "react-router-dom";
 
 const Content = () => {
   return (
-    <Container>
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route exact path="/services" element={<Services />} />
       <Route exact path="/gallery" element={<Gallery />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
-  </Container>
   );
 };
 
