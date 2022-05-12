@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const Gallery = () => {
-  return <div>Gallery</div>;
+  return (
+    <Container>
+      <div>Gallery</div>;
+    </Container>
+  );
 };
 
 export default Gallery;

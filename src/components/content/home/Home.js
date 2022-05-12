@@ -41,7 +41,7 @@ const Home = () => {
       {/* Why us section */}
       <WhyUs />
       {/* Footer with contact info */}
-      <Footer />
+      <Footer backgroundColor='var(--color-white)'/>
     </>
   );
 };
