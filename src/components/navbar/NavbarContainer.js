@@ -16,7 +16,6 @@ const NavbarContainer = () => {
 
   const handleButtonClick = (e) => {
     setActiveLink("contact");
-    console.log("kokot");
   };
 
   const nonActiveStyle = `${classes.links} nav-link`;

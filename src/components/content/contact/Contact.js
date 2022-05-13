@@ -6,6 +6,7 @@ import GridComponent from "../../UI/GridComponent";
 import {AiOutlinePhone, AiOutlineMail} from 'react-icons/ai';
 import {GrLocation} from 'react-icons/gr';
 import FormSection from "../../UI/FormSection";
+import { LocationMap } from "../../UI/LocationMap";
 
 const Contact = () => {
   return (
@@ -22,9 +23,9 @@ const Contact = () => {
       <div className={classes.contactInfoSection}>
         <h2 >Kontaktní informace</h2>
         <Container>
-          <GridComponent firstTitle="+420 775 454 334"
-          secondTitle="Jeseník nad Odrou 1, 742 33 Jeseník n. O."
-          thirdTitle="zemedelske.sluzby@email.cz"
+          <GridComponent firstTitle={<h5>+420 775 454 334</h5>}
+          secondTitle={<h5>Jeseník nad Odrou 1, 742 33 Jeseník n. O.</h5>}
+          thirdTitle={<h5>zemedelske.sluzby@email.cz</h5>}
           firstIcon={<AiOutlinePhone size={70}/>}
           secondIcon={<GrLocation size={65}/>}
           thirdIcon={<AiOutlineMail size={65}/>}
@@ -32,10 +33,12 @@ const Contact = () => {
           />
         </Container>
       </div>
-
+      {/* Section with contact form */}
       <FormSection />
-
-      {/* <Footer backgroundColor='var(--color-green)'/> */}
+      {/* Section with google map api */}
+      <LocationMap />
+      {/* Section with website footer */}
+      <Footer backgroundColor='var(--color-green)' textColor='var(--color-white)'/>
     </>
   );
 };

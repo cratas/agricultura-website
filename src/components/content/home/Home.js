@@ -1,12 +1,19 @@
-import React from "react";
+import { useRef, React } from "react";
 import MyButton from "../../UI/MyButton";
 import classes from "./Home.module.css";
 import titleImage from "./../../../assets/title-image.png";
 import WhyUs from "./WhyUs";
 import { Container } from "react-bootstrap";
 import Footer from "../footer/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+  const divRef = useRef(null);
+
+  const handleButtonClick = () => {
+    divRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Container>
@@ -24,7 +31,7 @@ const Home = () => {
               nebo zemědělské společnosti hospodařící nebo zemědělské
               společnosti
             </p>
-            <MyButton text="Více o nás" />
+            <MyButton text="Více o nás" onButtonClick={handleButtonClick} />
           </div>
           <div className={classes.imageSide}>
             <div className={classes.imageWrapper}>
@@ -39,9 +46,9 @@ const Home = () => {
         </div>
       </Container>
       {/* Why us section */}
-      <WhyUs />
+      <WhyUs scrollRef={divRef}/>
       {/* Footer with contact info */}
-      <Footer backgroundColor='var(--color-white)'/>
+      <Footer backgroundColor="var(--color-white)" />
     </>
   );
 };

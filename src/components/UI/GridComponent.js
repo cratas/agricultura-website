@@ -6,25 +6,25 @@ import classes from "./../content/home/Home.module.css";
 export const GridComponent = (props) => {
   return (
     <div>
-      <Row >
+      <Row>
         <Col>
           <div className={classes.colContent}>
             <div className={classes.circleService}>{props.firstIcon}</div>
-            <h3>{props.firstTitle}</h3>
+            {props.firstTitle}
             {props.firstText && <p>{props.firstText}</p>}
           </div>
         </Col>
         <Col>
           <div className={classes.colContent}>
             <div className={classes.circleService}>{props.secondIcon}</div>
-            <h3>{props.secondTitle}</h3>
-            { props.secondText && <p>{props.secondText}</p>}
+            {props.secondTitle}
+            {props.secondText && <p>{props.secondText}</p>}
           </div>
         </Col>
         <Col>
           <div className={classes.colContent}>
             <div className={classes.circleService}>{props.thirdIcon}</div>
-            <h3>{props.thirdTitle}</h3>
+            {props.thirdTitle}
             {props.thirdText && <p>{props.thirdText}</p>}
           </div>
         </Col>
