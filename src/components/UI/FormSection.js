@@ -86,75 +86,77 @@ export const FormSection = () => {
   return (
     <Container>
       <div className={classes.formSection}>
-        <h2>Napište nám!</h2>
+        <div className={classes.formWrapper}>
+          <h2>Napište nám!</h2>
 
-        <Form className={classes.contactForm} onSubmit={handleFormSubmit}>
-          <Form.Group className="mb-3" data-aos="fade-up">
-            <Form.Control
-              name="name"
-              value={name}
-              placeholder="Jméno"
-              className={classes.formInput}
-              onChange={nameChanged}
-              onBlur={nameBlured}
-              autoComplete="ignore"
-            />
-            {nameHasError && (
-              <Form.Text className={`text-muted ${classes.errorMessage}`}>
-                Zadejte prosím jméno.
+          <Form className={classes.contactForm} onSubmit={handleFormSubmit}>
+            <Form.Group className="mb-3" data-aos="fade-up">
+              <Form.Control
+                name="name"
+                value={name}
+                placeholder="Jméno"
+                className={classes.formInput}
+                onChange={nameChanged}
+                onBlur={nameBlured}
+                autoComplete="ignore"
+              />
+              {nameHasError && (
+                <Form.Text className={`text-muted ${classes.errorMessage}`}>
+                  Zadejte prosím jméno.
+                </Form.Text>
+              )}
+            </Form.Group>
+
+            <Form.Group className="mb-3" data-aos="fade-up">
+              <Form.Control
+                name="email"
+                value={email}
+                placeholder="E-mail"
+                className={classes.formInput}
+                onChange={emailChanged}
+                onBlur={emailBlured}
+                autoComplete="new-password"
+              />
+              {emailHasError && (
+                <Form.Text className={`text-muted ${classes.errorMessage}`}>
+                  Zadejte prosím e-mailovou adresu ve správném formátu.
+                </Form.Text>
+              )}
+            </Form.Group>
+
+            <Form.Group className="mb-3" data-aos="fade-up">
+              <Form.Control
+                value={message}
+                as="textarea"
+                rows={4}
+                name="message"
+                placeholder="Obsah zprávy"
+                className={classes.formInput}
+                onChange={messageChanged}
+                onBlur={messageBlured}
+                autoComplete="new-password"
+              />
+              {messageHasError && (
+                <Form.Text className={`text-muted ${classes.errorMessage}`}>
+                  Zadejte prosím zprávu.
+                </Form.Text>
+              )}
+            </Form.Group>
+
+            <Form.Group className="mb-3" data-aos="fade-up">
+              <MyButton
+                type="submit"
+                text="Odeslat"
+                style={{ marginTop: "1rem" }}
+              />
+            </Form.Group>
+            {isEmailSentMessageVisibile && (
+              <Form.Text className={`text-muted ${classes.emailSentMessage}`}>
+                Zpráva odeslána.
               </Form.Text>
             )}
-          </Form.Group>
-
-          <Form.Group className="mb-3" data-aos="fade-up">
-            <Form.Control
-              name="email"
-              value={email}
-              placeholder="E-mail"
-              className={classes.formInput}
-              onChange={emailChanged}
-              onBlur={emailBlured}
-              autoComplete="new-password"
-            />
-            {emailHasError && (
-              <Form.Text className={`text-muted ${classes.errorMessage}`}>
-                Zadejte prosím e-mailovou adresu ve správném formátu.
-              </Form.Text>
-            )}
-          </Form.Group>
-
-          <Form.Group className="mb-3" data-aos="fade-up">
-            <Form.Control
-              value={message}
-              as="textarea"
-              rows={4}
-              name="message"
-              placeholder="Obsah zprávy"
-              className={classes.formInput}
-              onChange={messageChanged}
-              onBlur={messageBlured}
-              autoComplete="new-password"
-            />
-            {messageHasError && (
-              <Form.Text className={`text-muted ${classes.errorMessage}`}>
-                Zadejte prosím zprávu.
-              </Form.Text>
-            )}
-          </Form.Group>
-
-          <Form.Group className="mb-3" data-aos="fade-up" >
-            <MyButton
-              type="submit"
-              text="Odeslat"
-              style={{ marginTop: "1rem" }}
-            />
-          </Form.Group>
-          {isEmailSentMessageVisibile && (
-            <Form.Text className={`text-muted ${classes.emailSentMessage}`}>
-              Zpráva odeslána.
-            </Form.Text>
-          )}
-        </Form>
+          </Form>
+        </div>
       </div>
     </Container>
   );

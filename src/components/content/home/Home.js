@@ -1,11 +1,11 @@
-import { useRef, React } from "react";
+import { useRef, React, useEffect } from "react";
 import MyButton from "../../UI/MyButton";
 import classes from "./Home.module.css";
 import titleImage from "./../../../assets/title-image.png";
 import WhyUs from "./WhyUs";
 import { Container } from "react-bootstrap";
 import Footer from "../footer/Footer";
-import { Link } from "react-router-dom";
+import FormSection from "../../UI/FormSection";
 
 const Home = () => {
   const divRef = useRef(null);
@@ -46,9 +46,10 @@ const Home = () => {
         </div>
       </Container>
       {/* Why us section */}
-      <WhyUs scrollRef={divRef}/>
+      <WhyUs scrollRef={divRef} />
+      <FormSection />
       {/* Footer with contact info */}
-      <Footer backgroundColor="var(--color-white)" />
+      <Footer backgroundColor="var(--color-green)" />
     </>
   );
 };

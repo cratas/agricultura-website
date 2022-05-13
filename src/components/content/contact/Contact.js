@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect, React } from "react";
 import { Container } from "react-bootstrap";
 import classes from "./Contact.module.css";
 import Footer from "../footer/Footer";
