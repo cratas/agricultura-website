@@ -11,6 +11,9 @@
   font-weight: 700;
   color: var(--color-black) !important;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .links.active:before {

@@ -1,0 +1,8 @@
+.formSection {
+    background-color: var(--color-white);
+    height: 500px;
+}
+
+.formSection h2 {
+    color: var(--color-black);
+}
