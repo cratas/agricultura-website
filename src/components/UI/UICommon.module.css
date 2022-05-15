@@ -43,9 +43,9 @@
   flex-direction: row-reverse;
 }
 
-/* .serviceCard:hover {
+.serviceCard:hover {
   transform: scale(1.01);
-} */
+}
 
 .textWrapper {
   display: flex;
@@ -64,6 +64,8 @@
 .textWrapper h3 {
   color: var(--color-black);
 }
+
+
 
 .imageWrapper {
   width: 15rem;
