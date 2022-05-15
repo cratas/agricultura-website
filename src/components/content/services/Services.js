@@ -30,7 +30,7 @@ const Services = () => {
       <ServiceCard leftAlligned={false} />
 
     </Container>
-    <Footer backgroundColor='var(--color-green)' textColor='var(--color-white)'></Footer>
+    <Footer />
     </>
   );
 };

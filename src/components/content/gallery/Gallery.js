@@ -41,10 +41,7 @@ const Gallery = () => {
       <div className={classes.imageGalleryWrapper}>
         <ImageGallery items={images} showPlayButton={false} />
       </div>
-      <Footer
-        backgroundColor="var(--color-green)"
-        textColor="var(--color-white)"
-      ></Footer>
+      <Footer/>
     </>
   );
 };

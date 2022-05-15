@@ -90,7 +90,7 @@ export const FormSection = () => {
           <h2>Napište nám!</h2>
 
           <Form className={classes.contactForm} onSubmit={handleFormSubmit}>
-            <Form.Group className="mb-3" data-aos="fade-up">
+            <Form.Group className="mb-3">
               <Form.Control
                 name="name"
                 value={name}
@@ -107,7 +107,7 @@ export const FormSection = () => {
               )}
             </Form.Group>
 
-            <Form.Group className="mb-3" data-aos="fade-up">
+            <Form.Group className="mb-3">
               <Form.Control
                 name="email"
                 value={email}
@@ -124,7 +124,7 @@ export const FormSection = () => {
               )}
             </Form.Group>
 
-            <Form.Group className="mb-3" data-aos="fade-up">
+            <Form.Group className="mb-3" >
               <Form.Control
                 value={message}
                 as="textarea"
@@ -143,7 +143,7 @@ export const FormSection = () => {
               )}
             </Form.Group>
 
-            <Form.Group className="mb-3" data-aos="fade-up">
+            <Form.Group className="mb-3" >
               <MyButton
                 type="submit"
                 text="Odeslat"

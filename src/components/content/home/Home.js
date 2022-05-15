@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <Container>
         <div className={classes.homeSection}>
-          <div className={classes.textSide}>
+          <div className={classes.textSide}  data-aos="fade-up">
             <h1>
               Profesionální
               <br />
@@ -33,7 +33,7 @@ const Home = () => {
             </p>
             <MyButton text="Více o nás" onButtonClick={handleButtonClick} />
           </div>
-          <div className={classes.imageSide}>
+          <div className={classes.imageSide}  data-aos="slide-left">
             <div className={classes.imageWrapper}>
               <img
                 src={titleImage}
@@ -49,7 +49,7 @@ const Home = () => {
       <WhyUs scrollRef={divRef} />
       <FormSection />
       {/* Footer with contact info */}
-      <Footer backgroundColor="var(--color-green)" />
+      <Footer />
     </>
   );
 };

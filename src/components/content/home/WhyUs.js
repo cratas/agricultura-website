@@ -8,7 +8,7 @@ import { MdMoreTime } from "react-icons/md";
 
 const WhyUs = props => {
   return (
-    <div className={classes.whyUsSection} ref={props.scrollRef}>
+    <div className={classes.whyUsSection} ref={props.scrollRef}  data-aos="slide-left">
       <Container>
         <h2>Proč zvolit naše služby?</h2>
         <GridComponent
