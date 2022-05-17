@@ -12,7 +12,7 @@ export const ServiceCard = (props) => {
 
   return (
     <div className={serviceCardStyle}>
-      <div className={classes.imageWrapper}></div>
+      <div className={classes.imageWrapper}><img src={props.image} alt="img" /></div>
       <div className={textWrapperStyle}>
         <h3>Rozmetání průmyslových hnojiv</h3>
         <p>

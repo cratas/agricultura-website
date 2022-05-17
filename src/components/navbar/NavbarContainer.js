@@ -9,6 +9,7 @@ import logo from "../../assets/logo.png";
 
 const NavbarContainer = () => {
   const [activeLink, setActiveLink] = useState("home");
+  const [isToggleActive, setIsToggleActive] = useState(false);
 
   const handleChangeSection = (e) => {
     setActiveLink(e.target.id);
@@ -17,6 +18,18 @@ const NavbarContainer = () => {
   const handleButtonClick = (e) => {
     setActiveLink("contact");
   };
+
+  const changeToggleStatus = () => {
+    setIsToggleActive((status) => !status);
+  };
+
+  const navbarToggleClassesFirst = isToggleActive
+    ? `${classes.toggleIconLine} ${classes.rotateLeft}`
+    : classes.toggleIconLine;
+
+  const navbarToggleClassesSecond = isToggleActive
+    ? `${classes.toggleIconLine} ${classes.rotateRight}`
+    : classes.toggleIconLine;
 
   const nonActiveStyle = `${classes.links} nav-link`;
   const activeStyle = `${classes.links} nav-link ${classes.active}`;
@@ -32,9 +45,18 @@ const NavbarContainer = () => {
       <Navbar sticky="top" expand="lg" className={classes.navbarContainer}>
         <Container>
           <Navbar.Brand>
-            <img src={logo} className={classes.logo} alt="logo"/>
+            <img src={logo} className={classes.logo} alt="logo" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle
+            className={classes.navbarToggle}
+            aria-controls="navbarNavAltMarkup"
+            onClick={changeToggleStatus}
+          >
+            <div className={classes.toggleIcon}>
+              <div className={navbarToggleClassesFirst}></div>
+              <div className={navbarToggleClassesSecond}></div>
+            </div>
+          </Navbar.Toggle>
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto my-2 my-lg-0">
               <Link

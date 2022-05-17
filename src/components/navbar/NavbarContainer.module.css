@@ -51,7 +51,49 @@
 }
 
 .logo {
-    width: 10rem;
+  width: 10rem;
+}
+
+.navbarToggle {
+  border: none;
+  padding: 0;
+  animation: 1s navbar-animation-2;
+}
+
+.navbarToggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.toggleIcon {
+  width: 2rem;
+  /* text-align: right; */
+}
+
+.toggleIconLine {
+  width: 100%;
+  margin: 0.5rem 0;
+  height: 3px;
+  background-color: var(--color-black);
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  border-radius: 10rem;
+}
+
+.toggleIconLine:last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.rotateLeft {
+  transform: rotate(135deg);
+  margin: 0 0 -0.2rem 0;
+}
+
+.rotateRight {
+  width: 100% !important;
+  transform: rotate(45deg);
+  margin: 0;
 }
 
 @media screen and (max-width: 991px) {
