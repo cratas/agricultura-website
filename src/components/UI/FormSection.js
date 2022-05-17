@@ -85,7 +85,7 @@ export const FormSection = () => {
 
   return (
     <Container>
-      <div className={classes.formSection}>
+      <div className={classes.formSection} data-aos="zoom-in">
         <div className={classes.formWrapper}>
           <h2>Napište nám!</h2>
 

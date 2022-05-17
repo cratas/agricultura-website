@@ -11,7 +11,7 @@ export const ServiceCard = (props) => {
     : `${classes.textWrapper} ${classes.textWrapperReversed}`;
 
   return (
-    <div className={serviceCardStyle}>
+    <div className={serviceCardStyle} data-aos="zoom-in">
       <div className={classes.imageWrapper}><img src={props.image} alt="img" /></div>
       <div className={textWrapperStyle}>
         <h3>Rozmetání průmyslových hnojiv</h3>

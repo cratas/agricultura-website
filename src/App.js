@@ -18,7 +18,7 @@ const ScrollToTop = () => {
 }
 
 
-Aos.init({ duration: 900 });
+Aos.init({ duration: 500 });
 
 function App() {
   return (

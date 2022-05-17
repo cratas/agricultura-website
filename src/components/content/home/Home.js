@@ -33,7 +33,7 @@ const Home = () => {
             </p>
             <MyButton text="Více o nás" onButtonClick={handleButtonClick} />
           </div>
-          <div className={classes.imageSide}  data-aos="slide-left">
+          <div className={classes.imageSide}  data-aos="zoom-in-left">
             <div className={classes.imageWrapper}>
               <img
                 src={titleImage}

@@ -7,21 +7,21 @@ export const GridComponent = (props) => {
   return (
     <div>
       <Row>
-        <Col xs={12} lg={4}>
+        <Col xs={12} lg={4} data-aos="fade-up">
           <div className={classes.colContent}>
             <div className={classes.circleService}>{props.firstIcon}</div>
             {props.firstTitle}
             {props.firstText && <p>{props.firstText}</p>}
           </div>
         </Col>
-        <Col xs={12} lg={4}>
+        <Col xs={12} lg={4} data-aos="fade-up">
           <div className={classes.colContent}>
             <div className={classes.circleService}>{props.secondIcon}</div>
             {props.secondTitle}
             {props.secondText && <p>{props.secondText}</p>}
           </div>
         </Col>
-        <Col xs={12} lg={4}>
+        <Col xs={12} lg={4} data-aos="fade-up">
           <div className={classes.colContent}>
             <div className={classes.circleService}>{props.thirdIcon}</div>
             {props.thirdTitle}

@@ -8,9 +8,9 @@ import { MdMoreTime } from "react-icons/md";
 
 const WhyUs = props => {
   return (
-    <div className={classes.whyUsSection} ref={props.scrollRef}  data-aos="slide-left">
+    <div className={classes.whyUsSection} ref={props.scrollRef}>
       <Container>
-        <h2>Proč zvolit naše služby?</h2>
+        <h2 data-aos="zoom-in">Proč zvolit naše služby?</h2>
         <GridComponent
           firstIcon={<FaRegHandshake size={70} />}
           secondIcon={<TiSpannerOutline size={70} />}

@@ -28,6 +28,7 @@ const Gallery = () => {
           <div
             className={titleClasses.titleSection}
             style={{ color: "var(--color-white)" }}
+            data-aos="zoom-in"
           >
             <h1 style={{ color: "var(--color-white)" }}>Galérie snímků</h1>
             <p style={{ maxWidth: "35rem" }}>
@@ -38,7 +39,7 @@ const Gallery = () => {
           </div>
         </Container>
       </div>
-      <div className={classes.imageGalleryWrapper}>
+      <div className={classes.imageGalleryWrapper} data-aos="zoom-in">
         <ImageGallery items={images} showPlayButton={false} />
       </div>
       <Footer/>

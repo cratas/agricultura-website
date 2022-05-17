@@ -15,6 +15,7 @@ const Services = () => {
           <div
             className={titleClasses.titleSection}
             style={{ color: "var(--color-white)" }}
+            data-aos="zoom-in"
           >
             <h1 style={{ color: "var(--color-white)" }}>Nabízené služby</h1>
             <p style={{ maxWidth: "35rem" }}>
