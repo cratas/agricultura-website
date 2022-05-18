@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import Home from "./home/Home";
 import Services from "./services/Services";
 import Gallery from "./gallery/Gallery";

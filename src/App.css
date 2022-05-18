@@ -7,3 +7,8 @@
   --color-black: #111111;
 
 }
+
+.loader {
+  background-color: red;
+  color: red;
+}
