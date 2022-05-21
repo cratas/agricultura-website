@@ -32,13 +32,12 @@ const Gallery = () => {
           >
             <h1 style={{ color: "var(--color-white)" }}>Galérie snímků</h1>
             <p style={{ maxWidth: "35rem" }}>
-              Prohlédněte si galerii snímku pořízených  
+              Prohlédněte si galerii, která obsahuje spoustu snímku pořízených při práci v průběhu sezony roku 2021.
             </p>
           </div>
         </Container>
       </div>
       <div className={classes.imageGalleryWrapper} data-aos="zoom-in">
-        <h3 style={{color: "var(--color-black)"}}>Sezona 2021</h3>
         <ImageGallery items={images} showPlayButton={false} />
       </div>
       <Footer/>
