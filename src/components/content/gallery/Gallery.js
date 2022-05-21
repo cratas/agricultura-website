@@ -32,14 +32,13 @@ const Gallery = () => {
           >
             <h1 style={{ color: "var(--color-white)" }}>Galérie snímků</h1>
             <p style={{ maxWidth: "35rem" }}>
-              Vyberte si z naší nabídky služeb mezi které patří Rozmetání
-              průmyslových hnojiv,Odvoz siláže,senáže,GPS, Lisování sena, slámy
-              Hranolové balíky
+              Prohlédněte si galerii snímku pořízených  
             </p>
           </div>
         </Container>
       </div>
       <div className={classes.imageGalleryWrapper} data-aos="zoom-in">
+        <h3 style={{color: "var(--color-black)"}}>Sezona 2021</h3>
         <ImageGallery items={images} showPlayButton={false} />
       </div>
       <Footer/>

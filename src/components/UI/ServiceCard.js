@@ -14,7 +14,7 @@ export const ServiceCard = (props) => {
     <div className={serviceCardStyle} data-aos="zoom-in">
       <div className={classes.imageWrapper}><img src={props.image} alt="img" /></div>
       <div className={textWrapperStyle}>
-        <h3>Rozmetání průmyslových hnojiv</h3>
+        <h3>{props.title}</h3>
         <p>
           Vyberte si z naší nabídky služeb mezi které patří Rozmetání
           průmyslových hnojiv,Odvoz siláže,senáže,GPS, Lisování sena,

@@ -19,18 +19,30 @@ const Services = () => {
           >
             <h1 style={{ color: "var(--color-white)" }}>Nabízené služby</h1>
             <p style={{ maxWidth: "35rem" }}>
-              Vyberte si z naší nabídky služeb mezi které patří Rozmetání
-              průmyslových hnojiv,Odvoz siláže,senáže,GPS, Lisování sena, slámy
-              Hranolové balíky
+              Vyberte si z naší nabídky služeb mezi které Lisování sena a slámy, Odvoz senáže, siláže a GPS a Odvoz obilí.
             </p>
           </div>
         </Container>
       </div>
       <Container>
-        <ServiceCard leftAlligned={true} image={firstImage} />
-        <ServiceCard leftAlligned={false} image={firstImage} />
-        <ServiceCard leftAlligned={true} image={firstImage} />
-        <ServiceCard leftAlligned={false} image={firstImage} />
+        <ServiceCard
+          title="Lisování sena a slámy"
+          text=""
+          leftAlligned={true}
+          image={firstImage}
+        />
+        <ServiceCard
+          title="Odvoz senáže, siláže a GPS"
+          text=""
+          leftAlligned={false}
+          image={firstImage}
+        />
+        <ServiceCard
+          title="Odvoz obilí"
+          text=""
+          leftAlligned={true}
+          image={firstImage}
+        />
       </Container>
       <Footer />
     </>

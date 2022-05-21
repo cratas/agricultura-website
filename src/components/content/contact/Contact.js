@@ -25,8 +25,8 @@ const Contact = () => {
         <h2 data-aos="zoom-in">Kontaktní informace</h2>
         <Container>
           <GridComponent
-            firstTitle={<h5>+420 775 454 334</h5>}
-            secondTitle={<h5>Jeseník nad Odrou 1, 742 33 Jeseník n. O.</h5>}
+            firstTitle={<h5>+420 775 469 320</h5>}
+            secondTitle={<h5>Bartošovice 393, 742 54 Bartošovice</h5>}
             thirdTitle={<h5>zemedelske.sluzby@email.cz</h5>}
             firstIcon={<AiOutlinePhone size={70} />}
             secondIcon={<GrLocation size={65} />}
