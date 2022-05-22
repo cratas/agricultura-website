@@ -16,10 +16,7 @@ export const ServiceCard = (props) => {
       <div className={textWrapperStyle}>
         <h3>{props.title}</h3>
         <p>
-          Vyberte si z naší nabídky služeb mezi které patří Rozmetání
-          průmyslových hnojiv,Odvoz siláže,senáže,GPS, Lisování sena,
-          průmyslových hnojiv,Odvoz siláže,senáže,GPS, Lisování sena,
-          průmyslových hnojiv,Odvoz siláže,senáže,GPS, Lisování sena,
+          {props.text}
         </p>
       </div>
     </div>
