@@ -19,8 +19,8 @@ const WhyUs = (props) => {
           secondTitle={<h3>Moderní technologie</h3>}
           thirdTitle={<h3>Zkušenosti</h3>}
           firstText="Nasloucháme zákazníkům a snažíme se vyjít jejím požadavkům maximálně vstříc. Zakládáme si na vzájemně férovém jednání."
-          secondText="Nabízíme služby, které využívají moderních trendů zemědělství a náš strojový park odpovídá svým stářím a kvalitou vysoké úrovni."
-          thirdText="Nejsme žádnými nováčky v oboru, proto nabízíme služby, které odpovídají dlouholetým zkušenostem v oboru zemědělství."
+          secondText="Nabízíme mechanizační služby sledující nejmodernější trendy zemědělství s patřičným vybavením kvalitou a stářím strojového parku."
+          thirdText="Nejsme žádnými nováčky v oboru. Stojí za námi téměř 5 let praktických zkušeností v oboru zemědělských služeb."
         />
       </Container>
     </div>

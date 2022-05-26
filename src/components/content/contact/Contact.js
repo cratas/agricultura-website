@@ -14,7 +14,7 @@ const Contact = () => {
         <div className={classes.titleSection} data-aos="zoom-in">
           <h1>Kontaktujte nás!</h1>
           <p>
-            Máte-lin jakékoli dotazy, neváhejte nás kontaktovat prostřednictvím
+            Máte-li jakékoliv dotazy, neváhejte nás kontaktovat prostřednictvím
             dostupných služeb.
           </p>
         </div>

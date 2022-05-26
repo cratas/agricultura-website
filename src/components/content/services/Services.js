@@ -5,7 +5,10 @@ import titleClasses from "../contact/Contact.module.css";
 import { ServiceCard } from "../../UI/ServiceCard";
 import Footer from "../footer/Footer";
 
-import firstImage from "../../../assets/title-image.png";
+import firstImage from "../../../assets/lis_image.jpg";
+import secondImage from "../../../assets/gps.jpeg";
+import thirdImage from "../../../assets/odvoz_image.jpg";
+
 
 const Services = () => {
   return (
@@ -35,13 +38,13 @@ const Services = () => {
           title="Odvoz senáže, siláže a GPS"
           text="Další nabízenou službou je odvoz senáže, siláže a GPS velkoobjemovými návěsy ?. Využíváme soupravy tvořeny z traktorů Jcb Fastrac 3230 Xtra s návěsy Bergmann HTW tandem a Metaltech SILO tridem. Oba návěsy mají vyprazdňování pomocí posuvného podlahového dopravníku."
           leftAlligned={false}
-          image={firstImage}
+          image={secondImage}
         />
         <ServiceCard
           title="Odvoz obilí"
           text="Ovoz obilí je další z našich služeb. Pro odvoz obilí využíváme soupravu traktorů Jcb Fastrac 3230 Xtr spolu s návěsem s Bergmann 20 t s možností vyprazdňování pomocí posuvného podlahového dopravníku."
           leftAlligned={true}
-          image={firstImage}
+          image={thirdImage}
         />
       </Container>
       <Footer />

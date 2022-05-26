@@ -1,7 +1,7 @@
 import { useRef, React } from "react";
 import MyButton from "../../UI/MyButton";
 import classes from "./Home.module.css";
-import titleImage from "./../../../assets/title-image.png";
+import titleImage from "./../../../assets/intro_image.jpg";
 import WhyUs from "./WhyUs";
 import { Container } from "react-bootstrap";
 import Footer from "../footer/Footer";
