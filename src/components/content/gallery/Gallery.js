@@ -8,16 +8,9 @@ import classes from "./Gallery.module.css";
 const Gallery = () => {
   const images = [];
 
-  for (let i = 1; i < 24; i++) {
-    if(i === 2 || i === 5) continue;
-    if (i < 10) {
-      // let tmp = "img0" + i;
-      let tmp = require("./../../../assets/img0" + i + ".jpg");
-      images.push({ original: tmp, thumbnail: tmp });
-    } else {
-      let tmp = require("./../../../assets/img" + i + ".jpg");
-      images.push({ original: tmp, thumbnail: tmp});
-    }
+  for (let i = 1; i < 10; i++) {
+    let tmp = require("./../../../assets/img0" + i + ".jpg");
+    images.push({ original: tmp, thumbnail: tmp });
   }
 
   return (
