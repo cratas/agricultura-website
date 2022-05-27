@@ -33,27 +33,31 @@ const App = () => {
   }, []);
 
   const loaderWrapperStyle = {
-    width: '100%',
-    height: '100vh',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
+    width: "100%",
+    height: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
   };
 
   const loader = (
     <div style={loaderWrapperStyle}>
-      <Spinner animation="border"  />
+      <Spinner animation="border" />
     </div>
   );
-  const mainContent = (
-    <Router>
-      <NavbarContainer />
-      <ScrollToTop />
-      <Content />
-    </Router>
-  );
 
-  return isLoaded ? mainContent : loader;
+  return (
+    <>
+      {!isLoaded && loader}
+      <div style={isLoaded ? { display: "block" } : { display: "none" }}>
+        <Router>
+          <NavbarContainer />
+          <ScrollToTop />
+          <Content />
+        </Router>
+      </div>
+    </>
+  );
 };
 
 export default App;

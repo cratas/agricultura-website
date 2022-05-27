@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <Container>
         <div className={classes.homeSection}>
-          <div className={classes.textSide}  data-aos="fade-up">
+          <div className={classes.textSide} data-aos="fade-up">
             <h1>
               Profesionální
               <br />
@@ -27,13 +27,13 @@ const Home = () => {
               služby
             </h1>
             <p>
-              Jro zemědělce, ať žijí již malé či velké, soukrémě hospodařící
-              nebo zemědělské společnosti hospodařící nebo zemědělské
-              společnosti
+              Jsme firma, která nabízí profesionální zemědělské služby.
+              Spokojenost zákazníka je naší hlavní prioritou. Stojí za námi
+              téměř 5 let praktických zkušeností.
             </p>
             <MyButton text="Více o nás" onButtonClick={handleButtonClick} />
           </div>
-          <div className={classes.imageSide}  data-aos="zoom-in-left">
+          <div className={classes.imageSide} data-aos="zoom-in-left">
             <div className={classes.imageWrapper}>
               <img
                 src={titleImage}

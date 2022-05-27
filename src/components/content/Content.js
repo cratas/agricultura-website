@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useMemo} from "react";
 import Home from "./home/Home";
 import Services from "./services/Services";
 import Gallery from "./gallery/Gallery";
@@ -6,6 +6,7 @@ import Contact from "./contact/Contact";
 import { Routes, Route } from "react-router-dom";
 
 const Content = () => {
+
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />

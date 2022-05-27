@@ -36,7 +36,7 @@ const Services = () => {
         />
         <ServiceCard
           title="Odvoz senáže, siláže a GPS"
-          text="Další nabízenou službou je odvoz senáže, siláže a GPS velkoobjemovými návěsy ?. Využíváme soupravy tvořeny z traktorů Jcb Fastrac 3230 Xtra s návěsy Bergmann HTW tandem a Metaltech SILO tridem. Oba návěsy mají vyprazdňování pomocí posuvného podlahového dopravníku."
+          text="Další nabízenou službou je odvoz senáže, siláže a GPS velkoobjemovými návěsy. Využíváme soupravy tvořeny z traktorů Jcb Fastrac 3230 Xtra s návěsy Bergmann HTW tandem a Metaltech SILO tridem. Oba návěsy mají vyprazdňování pomocí posuvného podlahového dopravníku."
           leftAlligned={false}
           image={secondImage}
         />
