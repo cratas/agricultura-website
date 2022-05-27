@@ -1,11 +1,14 @@
 import { useRef, React } from "react";
 import MyButton from "../../UI/MyButton";
 import classes from "./Home.module.css";
-import titleImage from "./../../../assets/intro_image.jpg";
 import WhyUs from "./WhyUs";
 import { Container } from "react-bootstrap";
 import Footer from "../footer/Footer";
 import FormSection from "../../UI/FormSection";
+
+const images = [
+  "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664060/intro_image_k5d5ae.jpg",
+];
 
 const Home = () => {
   const divRef = useRef(null);
@@ -36,7 +39,7 @@ const Home = () => {
           <div className={classes.imageSide} data-aos="zoom-in-left">
             <div className={classes.imageWrapper}>
               <img
-                src={titleImage}
+                src={images[0]}
                 className={classes.profilePicture}
                 alt="Me"
                 sizes="500px"

@@ -5,14 +5,70 @@ import Footer from "./../footer/Footer";
 import titleClasses from "../contact/Contact.module.css";
 import classes from "./Gallery.module.css";
 
+const images = [
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664060/intro_image_k5d5ae.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664060/intro_image_k5d5ae.jpg",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664053/img07_t1mmyp.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664053/img07_t1mmyp.jpg",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664053/img04_g5k1do.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664053/img04_g5k1do.jpg",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664045/img02_td6wnh.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664045/img02_td6wnh.jpg",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664040/img05_sd0lnc.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664040/img05_sd0lnc.jpg",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664038/img09_cbo2jl.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664038/img09_cbo2jl.jpg",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664038/img06_duys3t.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664038/img06_duys3t.jpg",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653663990/lis_image_d8jdy3.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653663990/lis_image_d8jdy3.jpg",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653663982/gps_xerqx2.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653663982/gps_xerqx2.jpg",
+  },
+  {
+    original:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653663982/gps_xerqx2.jpg",
+    thumbnail:
+      "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653663982/gps_xerqx2.jpg",
+  },
+];
+
 const Gallery = () => {
-  const images = [];
-
-  for (let i = 1; i < 10; i++) {
-    let tmp = require("./../../../assets/img0" + i + ".jpg");
-    images.push({ original: tmp, thumbnail: tmp });
-  }
-
   return (
     <>
       <div style={{ backgroundColor: "var(--color-green)" }}>
