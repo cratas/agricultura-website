@@ -4,6 +4,7 @@ import classes from "./Services.module.css";
 import titleClasses from "../contact/Contact.module.css";
 import { ServiceCard } from "../../UI/ServiceCard";
 import Footer from "../footer/Footer";
+import img01 from "./../../../assets/img01.jpeg";
 
 const images = [
   "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653663990/lis_image_d8jdy3.jpg",
@@ -32,7 +33,7 @@ const Services = () => {
       <Container>
         <ServiceCard
           title="Lisování sena a slámy"
-          text="Nabízíme službu lisování seba a slámy do hranolových balíků. Využíváme lisy Krone Big-Pack 1290 Xc High speed. Rozměr balíku: 120x90 50-240. Součástí této služby je možnost řezání balíků."
+          text="Nabízíme službu lisování seba a slámy do hranolových balíků. Využíváme lisy Krone Big-Pack 1290 Xc High speed. Rozměr balíku: 120x90 50-240. Součástí této služby je možnost řezání."
           leftAlligned={true}
           image={images[0]}
         />
@@ -50,9 +51,9 @@ const Services = () => {
         />
         <ServiceCard
           title="Vápnění"
-          text="  "
+          text=""
           leftAlligned={false}
-          image={images[2]}
+          image={img01}
         />
       </Container>
       <Footer />
