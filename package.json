@@ -1,6 +1,10 @@
 {
   "name": "agricultural-website",
   "version": "0.1.0",
+  "engines": {
+    "npm": "8.1.2",
+    "node": "16.13.1"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",

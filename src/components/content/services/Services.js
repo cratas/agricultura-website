@@ -44,8 +44,14 @@ const Services = () => {
         />
         <ServiceCard
           title="Odvoz obilí"
-          text="Ovoz obilí je další z našich služeb. Pro odvoz obilí využíváme soupravu traktorů Jcb Fastrac 3230 Xtr spolu s návěsem s Bergmann 20 t s možností vyprazdňování pomocí posuvného podlahového dopravníku."
+          text="Ovoz obilí je další z našich služeb. Pro odvoz obilí využíváme soupravu traktorů Jcb Fastrac 3230 Xtr spolu s návěsem Bergmann 20 t. Vyprazdňování je pomocí posuvného podlahového dopravníku."
           leftAlligned={true}
+          image={images[2]}
+        />
+        <ServiceCard
+          title="Vápnění"
+          text="  "
+          leftAlligned={false}
           image={images[2]}
         />
       </Container>
