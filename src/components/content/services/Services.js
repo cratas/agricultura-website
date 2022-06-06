@@ -45,13 +45,13 @@ const Services = () => {
         />
         <ServiceCard
           title="Odvoz obilí"
-          text="Ovoz obilí je další z našich služeb. Pro odvoz obilí využíváme soupravu traktorů Jcb Fastrac 3230 Xtr spolu s návěsem Bergmann 20 t. Vyprazdňování je pomocí posuvného podlahového dopravníku."
+          text="Ovoz obilí je další z našich služeb. Pro odvoz obilí využíváme soupravu traktorů Jcb Fastrac 3230 Xtra spolu s návěsem Bergmann 20 t. Vyprázdňování je pomocí posuvného podlahového dopravníku."
           leftAlligned={true}
           image={images[2]}
         />
         <ServiceCard
           title="Vápnění"
-          text="Součástí našich služeb je aplikace vápence, dolomitického vápence a průmyslových hnojiv. Rozmetadlo Bredal K105L, nosnost 12tun, vážící systém a aplikace dle navigace GPS."
+          text="Součástí našich služeb je také aplikace vápence, dolomitického vápence a průmyslových hnojiv. Rozmetadlo Bredal K105L, nosnost 12tun, vážící systém a aplikace dle navigace GPS."
           leftAlligned={false}
           image={img01}
         />
