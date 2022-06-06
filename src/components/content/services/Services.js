@@ -51,7 +51,7 @@ const Services = () => {
         />
         <ServiceCard
           title="Vápnění"
-          text=""
+          text="Součástí našich služeb je aplikace vápence, dolomitického vápence a průmyslových hnojiv. Rozmetadlo Bredal K105L, nosnost 12tun, vážící systém a aplikace dle navigace GPS."
           leftAlligned={false}
           image={img01}
         />
