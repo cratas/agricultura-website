@@ -5,10 +5,7 @@ import WhyUs from "./WhyUs";
 import { Container } from "react-bootstrap";
 import Footer from "../footer/Footer";
 import FormSection from "../../UI/FormSection";
-
-const images = [
-  "https://res.cloudinary.com/dqgyknmlc/image/upload/v1653664060/intro_image_k5d5ae.jpg",
-];
+import mainImage from "../../../assets/main.jpeg"
 
 const Home = () => {
   const divRef = useRef(null);
@@ -39,7 +36,7 @@ const Home = () => {
           <div className={classes.imageSide} data-aos="zoom-in-left">
             <div className={classes.imageWrapper}>
               <img
-                src={images[0]}
+                src={mainImage}
                 className={classes.profilePicture}
                 alt="Me"
                 sizes="500px"
